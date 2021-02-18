@@ -8,5 +8,5 @@ assignees: jwdeaa
 ---
 
 Your Pzzqz Account Num: <ACCOUNT NUM>
-Your BTC Address: <THE FIRST OR THE LAST 10 CHARACTERS> Example: 141338dfe5xxxxxxxxxxxxxxxxxxxxxxxx
+Your BTC Address: <THE FIRST 12 OR THE LAST 12 CHARACTERS> Example: 141338dfe520xxxxxxxxxxxxxxxxxxxxxx
 Donate at: <DATETIME> Example: 02/10/2021 09:20:01
