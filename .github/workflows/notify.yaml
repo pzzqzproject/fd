@@ -1,0 +1,19 @@
+name: Issues Notify Hook
+
+on:
+  issue_comment:
+    types: [created, opened, edited, deleted]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+    - uses: actions/checkout@v2
+    - name: Send notify message
+      run: |
+        curl -X POST https://api.pzzqz.com/api/v1.0/notify \
+             -H "Content-Type: application/json" \
+             -d '{"message": "new issues created.", "key": "${{ secrets.NOTIFY_AUTH_KEY }}", "issues_repo": "https://github.com/pzzqzproject/fd/issues"}' 
+
